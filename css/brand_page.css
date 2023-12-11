@@ -1,0 +1,94 @@
+#brand_details{
+    width: 80%;
+    /* height: 150px; */
+    color: white;
+    background: #353839;
+    text-align: center;
+    margin-top: 4%;
+    /* padding: 1%; */
+    /* border: 2px solid #7C0A02; */
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+
+#brand_details h1 {
+    text-align: center;
+    color: #FFD700;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-bottom: 1%;
+}
+
+#brand_details p{
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.models{
+    text-align: center;
+}
+
+.models h1{
+    color: #7C0A02;
+}
+
+.model_sec_1{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 70%;
+    margin: 2%;   
+}
+
+.model_1{
+    width: 100%;
+    margin: 2%;
+    display: flex;
+    /* flex-direction: row; */
+    background: #35383985;
+    border-radius: 15px;
+    
+}
+
+.model_1 img{
+    width: 50%;
+    height: auto;
+    border-bottom-left-radius: 15px ;
+    border-top-left-radius: 15px;
+}
+
+.m_details{
+    width: 50%;
+    padding-top: 5%;
+}
+
+.m_details a{
+    padding: 3%;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.m_details a:hover{
+    border: 1px solid #7C0A02;
+    background: #7C0A02;
+    color: white;
+}
+
+.car_details{
+    color: white;
+    background: #353839;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;;
+}
+
+.car_name{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700;
+}
+

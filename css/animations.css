@@ -1,0 +1,66 @@
+@keyframes slidein{
+    0%{
+        /* transform : translateX(-100%); */
+        opacity: 0;
+    }
+    100%{
+        /* transform: translateY(0%); */
+        opacity: 1;
+    }
+}
+/* Animations of home-section to change background image */
+/* @keyframes home-background {
+    0%{
+        color: white;
+        background-image: url('/images/home_img_1.jpg');
+        height: 100%;
+    }
+    25%{
+        background-image: url('/images/home_img_2.jpg');
+        height: 100%;
+
+    }
+    50%{
+        background-image: url('/images/home_img_3.jpg');
+        height: 100%;
+    }
+    75%{
+        background-image: url('/images/home_img_4.jpg');
+        height: 100%;
+    }
+    100%{
+        background-image: url('/images/home_img_5.jpg');
+        height: 100%;
+    }
+} */
+
+
+/* Animations of home-section to display some details about the website */
+/* @keyframes text-background{
+    0%{
+        
+
+        background: rgba(0, 0, 0, 0.8);
+        content: " Immerse yourself in the world of automobiles with us.";
+    }
+    25%{
+
+        background: rgba(0, 0, 0, 0.8);
+        content: "Where sophistication meets automotive excellence";
+    }
+    50%{
+
+        background: rgba(0, 0, 0, 0.8);
+        content: "Discover the Road Ahead: Know Your Ride, Own Your Journey!";
+    }
+    75%{
+
+        background: rgba(0, 0, 0, 0.8);
+        content: "Elevate your driving experience with in-depth insights into your vehicle's mechanics and features.";
+    }
+    100%{
+
+        background: rgba(0, 0, 0, 0.8);
+        content: "Drive with confidence, armed with the knowledge to navigate any road with precision and mastery.";
+    }
+} */

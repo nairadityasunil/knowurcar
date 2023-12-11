@@ -1,0 +1,87 @@
+/* Make changes to style when mouse is hovered on a link or the link becomes active */
+.logo:hover{
+    /* color: #7C0A02; */
+    cursor: pointer;
+}
+
+a.active,a:hover{
+    /* border: 1px solid white;
+    background: #04444D; */
+    transition: 0.5s;
+    color: orange;
+    border-bottom: 2px solid white;
+}
+
+.nav-search:hover{
+    border: 1px solid #4a0602;
+    color: white;
+    /* border: none; */
+    /* transform: scale(1.1); */
+    background: #4a0602;
+    transition: transform 0.2s ease-in-out;
+}
+
+.animated-text a:hover{
+    /* border: none; */
+    border: 1px solid #7C0A02;
+    color: white;
+    /* transform: scale(1.1); */
+    background: #7C0A02;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Styling of details below the welcome heading */
+.details::before{
+    text-align: center;
+    content: ""; /* Initialially the content displayed will be null */
+    padding: 1vw;
+    position: absolute;
+    color: orange;
+    display: block;
+    flex-direction: row; /* Flex direction will be set to one row */
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    left: 0;
+    width: 100%;
+    margin-top: 11vw;
+    animation: text-background 30s linear infinite; /* Animations to set details about the website */
+}
+
+.card-parent:hover{
+    /* border-color: #04444D; */
+    border-color: #4a0602;
+    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+    /* background-color: #353839; */
+    background-color: #20212285;
+
+}
+
+.card-parent:hover{
+    transform: scale(1.1);
+}
+
+.card-parent:hover .brand-img{
+    overflow: hidden;
+}
+/* 
+.card-parent:hover .card-child{
+    background-color: #04444D;
+    background-color: #4a0602;
+    transform: scale(1.2);
+    color: white;
+    border-color: #04444D;
+    border-color: #4a0602;
+} */
+
+/* Change size of the image when hovered */
+/* .card-parent:hover img{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+.social-media img:hover{
+    transform: scale(1.2);
+} */

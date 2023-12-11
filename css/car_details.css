@@ -1,0 +1,198 @@
+.int_nav{
+    width: 100%;
+    background: #35383985;
+    height: 55px;
+    line-height: 50px;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 10%;
+    /* border-radius: 10px; */
+}
+
+.int_nav ul{
+    margin-left: 10px;
+    /* margin-top: 5%; */
+    display: flex;
+    gap: 1%;
+    font-size: larger;
+}
+
+.int_nav ul a{
+    color: white;
+}
+
+.navbar-links a:hover{
+    border-bottom: 2px solid orange;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: orange;
+}
+
+.cost_info{
+    margin-top: 5%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    
+}
+
+.model_name{
+    width: 43.5%;
+    height: 300px;
+    display: flex;
+    background: #35383985;
+    border: 2px solid #35383985;
+    border-radius: 15px;
+}
+
+.model_name img{
+    width: 60%;
+    height: auto;
+    border-bottom-left-radius: 15px ;
+    border-top-left-radius: 15px;
+    padding: 2%;
+}
+
+.car_name{
+    color: orange;
+    font-size: larger;
+}
+.car_details{
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.price_list{
+    width: 43.3%;
+}
+
+table{
+    padding: 2%;
+    border: 2px solid red;
+}
+
+.table{
+    background-color: #35383985;
+    border: 2px solid #222324;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.table1{
+    background-color: #35383985;
+    border: 2px solid #222324;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.table th{
+    color: orange;
+}
+
+.key_specs{
+    margin-top: 40px;    
+}
+
+.key_specs h1{
+    color: #7C0A02;
+}
+
+.key_main{
+    margin-top: 2%;
+    align-items: start;
+    width: 80%;
+    display: flex;
+    background: #35383985;
+    padding: 1%;
+    gap: 1%;
+    border-radius: 10px;
+}
+
+.elements{
+    width: fit-content;
+}
+
+.elements img{
+    width: 30%;
+}
+
+.specs{
+    margin-top: 50px;  
+}
+
+.specs h1{
+    color: #7C0A02;
+    margin-top: 30px;
+}
+
+.specs-table{
+    margin-top: 2%;
+    width: 75%;
+    background: #35383985;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.specs-table1{
+    margin-top: 2%;
+    width: 80%;
+    background: #35383985;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.specs-table h2{
+    color: orange;
+    margin-bottom: 1%;
+}
+
+.specs-table1 h2{
+    color: orange;
+    margin-bottom: 1%;
+}
+
+.specs-table table{
+    /* margin-top: 30px; */
+    /* width: 90%; */
+    font-size: larger;
+    color: white;
+}
+
+table{
+    border-radius: 15px;
+}
+
+table td{
+    height: 50px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.footer{
+    margin-top: 2%;
+}
+
+hr{
+    width: 95%;
+}
+
+table th{
+    color: orange;
+    height: 20%;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.safety{
+    display: flex;
+}
+
+.safe_ft{
+    width: 10%;
+}
+
