@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know-ur-Ride</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/effects.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/brand_page.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/contact-form.css">
+    <link rel="stylesheet" href="../css/effects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/js/navbar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./js/navbar.js"></script>
+    <style>
+       
+    </style>
 </head>
 
 <body>
@@ -21,16 +28,20 @@
         </a>
         <ul class="navbar-links">
             <li>
-                <a href="#home" class="home_links1" onclick="toggle_active_class1()">Home</a>
+                <a href="https://nairadityasunil.github.io/knowurcar/#home" class="home_links1"
+                    onclick="toggle_active_class1()">Home</a>
             </li>
             <li>
-                <a href="#brands" class="home_links2" onclick="toggle_active_class2()">Brands</a>
+                <a href="https://nairadityasunil.github.io/knowurcar/#brands" class="home_links2"
+                    onclick="toggle_active_class2()">Brands</a>
             </li>
             <li>
-                <a href="#types" class="home_links3" onclick="toggle_active_class3()">Type</a>
+                <a href="https://nairadityasunil.github.io/knowurcar/#types" class="home_links3"
+                    onclick="toggle_active_class3()">Type</a>
             </li>
             <li>
-                <a href="#contact" class="home_links3" onclick="toggle_active_class4()">Contact</a>
+                <a href="https://nairadityasunil.github.io/knowurcar/html/contact.html" class="home_links3"
+                    onclick="toggle_active_class4()">Contact</a>
             </li>
             <li>
                 <input type="search" name="" id="" placeholder="Search">
@@ -45,177 +56,49 @@
             </button>
         </label>
     </nav>
+<center>
+    <div class="contact-form">
+        <div class="form1">
+            <h1>Let Us Solve Your Queries</h1>
+            <form action="">
+                <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
+                    <tr>
+                        <td style="width: 30%; text-align: end;">Enter Name : </td>
+                        <td>
+                            <input type="text" name="" id="" style="width: 70%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%;  text-align: end;">Enter Email : </td>
+                        <td>
+                            <input type="email" name="" id=""  style="width: 70%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%;  text-align: end;">Enter Contact : </td>
+                        <td>
+                            <input type="tel" name="" id=""  style="width: 70%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%;  text-align: end;">Your Query : </td>
+                        <td>
+                            <textarea name="" id="" cols="40" rows="5" style="border-radius: 10px;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit" class="submit_btn">
+                            <input type="reset" value="Reset" class="reset_btn">
+                        </td>
+                    </tr>
+                </table>
+            </form>
 
-    <!-- Information About The Website Home Page -->
-    <div id="home">
-        <div class="home-card">
-            <div class="animated-text">
-                <h1>Welcome to <u>Know-ur-Ride</u></h1>
-                <span>Immerse yourself in the world of automobiles with us.</span>
-                <br>
-                <a href="#details">Know More</a>
-            </div>
-            <div class="know-more">
-            </div>
-            <div class="home-img">
-                <img src="./images/home-img.jpg" alt="" srcset="">
-            </div>
         </div>
     </div>
 
-    <hr style="margin-top: 9px; width: 100vw;">
-
-    <!-- Details Section -->
-    <div id="details">
-        <div class="details-card">
-            <center>
-                <h1 class="about-heading">About Us</h1>
-            </center>
-            <center>
-                <div class="dcard">
-                    <div class="mission details-card-parent">
-                        <h2>Our Mission</h2>
-                        <p>Our mission is to demystify the world of automobiles. We understand that choosing the perfect
-                            car involves more than just looks; it's about finding a vehicle that aligns with your
-                            lifestyle, preferences, and performance expectations. Know-UR-Ride is here to guide you
-                            through this journey by providing comprehensive and unbiased information.</p>
-                    </div>
-                    <div class="innovation details-card-parent">
-                        <h2>Continued Innovation</h2>
-                        <p>We continuously explore new technologies and features to bring you cutting-edge solutions
-                            that enhance your travel experience. Our team is passionate about finding innovative ways to
-                            make your journeys more efficient, enjoyable, and tailored to your unique preferences.</p>
-                    </div>
-                    <div class="sustainability details-card-parent">
-                        <h2>Sustainability Focus</h2>
-                        <p>Know-UR-Ride is dedicated to promoting eco-friendly transportation options. We actively
-                            support and encourage sustainable travel practices, providing information on environmentally
-                            conscious choices and promoting shared mobility solutions.</p>
-                    </div>
-                    <div class="sustainability details-card-parent">
-                        <h2>Accessibility for All</h2>
-                        <p>Know-UR-Ride is designed to be accessible to everyone. We prioritize inclusivity by providing
-                            features that cater to individuals with diverse needs. Our commitment is to make
-                            transportation information readily available for all, promoting an inclusive and
-                            accommodating travel experience.</p>
-                    </div>
-                </div>
-            </center>
-        </div>
-    </div>
-
-    <!-- Brand Section -->
-    <div id="brands">
-        <hr>
-        <div class="brand-card">
-            <center>
-                <h1 class="brand_heading">Popular Brands</h1>
-            </center>
-            <div class="bcard1">
-                <a href="./html/mercedes_brand.html" style="border:none;">
-                    <div class="mercedes card-parent">
-                        <div class="brand-img">
-                            <img src="./images/mercedes/1.png" alt="">
-                        </div>
-                        <div class="brand-name card-child">
-                            <label for="">Mercedes-Benz</label>
-                        </div>
-                    </div>
-                </a>
-                <a href="./html/bmw_brand.html">
-                    <div class="bmw card-parent">
-                        <div class="brand-img">
-                            <img src="./images/bmw/1.png" alt="">
-                        </div>
-                        <div class="brand-name card-child">
-                            <label for="">BMW</label>
-                        </div>
-                    </div>
-                </a>
-                <a href="./html/audi_brand.html">
-                    <div class="audi card-parent">
-                        <div class="brand-img">
-                            <img src="./images/audi/1.png" alt="">
-                        </div>
-                        <div class="brand-name card-child">
-                            <label for="">Audi</label>
-                        </div>
-                    </div>
-                </a>
-                <a href="./html/toyota_brand.html">
-                    <div class="toyota card-parent">
-                        <div class="brand-img">
-                            <img src="./images/toyota/1.png" alt="">
-                        </div>
-                        <div class="brand-name  card-child">
-                            <label for="">Toyota</label>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Body types section -->
-    <div id="types">
-        <hr>
-        <div class="type-card">
-            <center>
-                <h1 class="type_heading">Body Types</h1>
-            </center>
-            <div class="tcard1">
-                <a href="./html/hatchback.html">
-                    <div class="hatchback card-parent">
-                        <div class="type-img">
-                            <img src="./images/Body Types/1.png" alt="">
-                        </div>
-                        <div class="type-name card-child">
-                            <label for="">Hatchback</label>
-                        </div>
-                    </div>
-                </a>
-                <!-- <div class="convertible card-parent">
-                    <div class="type-img">
-                        <img src="/images/Body Types/2.png" alt="">
-                    </div>
-                    <div class="type-name card-child">
-                        <label for="">Convertible</label>
-                    </div>
-                </div> -->
-                <a href="./html/mpv.html">
-                    <div class="mpv card-parent">
-                        <div class="type-img">
-                            <img src="./images/Body Types/5.png" alt="">
-                        </div>
-                        <div class="type-name card-child">
-                            <label for="">MPV</label>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./html/sedan.html">
-                    <div class="sedan card-parent">
-                        <div class="type-img">
-                            <img src="./images/Body Types/3.png" alt="">
-                        </div>
-                        <div class="type-name card-child">
-                            <label for="">Sedan</label>
-                        </div>
-                    </div>
-                </a>
-                <a href="./html/suv.html">
-                    <div class="suv card-parent">
-                        <div class="type-img">
-                            <img src="./images/Body Types/4.png" alt="">
-                        </div>
-                        <div class="type-name card-child">
-                            <label for="">SUV</label>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+</center>
 
     <!-- Footer section -->
     <div class="footer" id="contact">
@@ -227,13 +110,13 @@
             <span>Connect With Me On</span>
             <!-- <span class="connect">Connect With Me On</span> -->
             <a href="https://linkedin.com/in/aditya-nair-939b29220" style="border: none;" target="_blank">
-                <img src="./images/social media/linkedin-logo-png-1854.png" alt="" srcset="">
+                <img src="../images/social media/linkedin-logo-png-1854.png" alt="" srcset="">
             </a>
             <a href="https://instagram.com/nairadityasunil" style="border: none;" target="_blank">
-                <img src="./images/social media/logo-ig-png-32464.png" alt="" srcset="">
+                <img src="../images/social media/logo-ig-png-32464.png" alt="" srcset="">
             </a>
             <a href="https://github.com/nairadityasunil" style="border: none;" target="_blank">
-                <img src="./images/social media/github.png" alt="" srcset="">
+                <img src="../images/social media/github.png" alt="" srcset="">
             </a>
             <!-- <a href="https://www.snapchat.com/add/nairadityasunil?share_id=U4lTz50YhIA&locale=en-US" style="border: none;" target="_blank">
                 <img src="/images/social media/snapchat-logo-png-1450 (1).png" alt="" srcset="">
