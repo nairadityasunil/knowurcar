@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="./js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/validate.js"></script>
     <style>
        
     </style>
@@ -60,30 +61,30 @@
     <div class="contact-form">
         <div class="form1">
             <h1>Let Us Solve Your Queries</h1>
-            <form action="">
+            <form action="" name="form1" onsubmit="validate()">
                 <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
                     <tr>
                         <td style="width: 30%; text-align: end;">Enter Name : </td>
                         <td>
-                            <input type="text" name="" id="" style="width: 70%;">
+                            <input type="text" name="" id="" style="width: 70%;" name="cname">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Enter Email : </td>
                         <td>
-                            <input type="email" name="" id=""  style="width: 70%;">
+                            <input type="email" name="" id=""  style="width: 70%;" name="cemail">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Enter Contact : </td>
                         <td>
-                            <input type="tel" name="" id=""  style="width: 70%;">
+                            <input type="tel" name="" id=""  style="width: 70%;" name="cphone">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Your Query : </td>
                         <td>
-                            <textarea name="" id="" cols="40" rows="5" style="border-radius: 10px;"></textarea>
+                            <textarea name="" id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"></textarea>
                         </td>
                     </tr>
                     <tr>
