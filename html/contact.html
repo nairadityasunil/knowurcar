@@ -15,35 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../js/navbar.js"></script>
-<script>
-    function validate()
-{
-    let cname = document.forms["form1"]['cname'].value;
-    let cemail = document.forms["form1"]['cemail'].value;
-    let cphone = document.forms["form1"]['cphone'].value;
-    let cquery = document.forms["form1"]['cquery'].value;
-
-    if (cname=="")
-    {
-        alert("Please Enter Name.");
-    }
-
-    if(cemail=="")
-    {
-        alert("Please Enter Email.");
-    }
-
-    if(cphone=="")
-    {
-        alert("Please Enter Contact Number.");
-    }
-
-    if(cquery=="")
-    {
-        alert("Please Enter Your Query.");
-    }
-}
-</script>
 </head>
 
 <body>
@@ -86,30 +57,30 @@
     <div class="contact-form">
         <div class="form1">
             <h1>Let Us Solve Your Queries</h1>
-            <form action="" name="form1" onsubmit="validate()">
+            <form action="" name="form2"  onsubmit="validate()">
                 <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
                     <tr>
                         <td style="width: 30%; text-align: end;">Enter Name : </td>
                         <td>
-                            <input type="text" name="" id="" style="width: 70%;" name="cname">
+                            <input type="text"id="" style="width: 70%;" name="cname">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Enter Email : </td>
                         <td>
-                            <input type="email" name="" id=""  style="width: 70%;" name="cemail">
+                            <input type="email"id=""  style="width: 70%;" name="cemail">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Enter Contact : </td>
                         <td>
-                            <input type="tel" name="" id=""  style="width: 70%;" name="cphone">
+                            <input type="tel"id=""  style="width: 70%;" name="cphone">
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 30%;  text-align: end;">Your Query : </td>
                         <td>
-                            <textarea name="" id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"></textarea>
+                            <textarea id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -150,5 +121,35 @@
         </div>
     </div>
 </body>
+<script>
+        function validate()
+{
+    let cname = document.forms["form2"]['cname'].value;
+    let cemail = document.forms["form2"]['cemail'].value;
+    let cphone = document.forms["form2"]['cphone'].value;
+    let cquery = document.forms["form2"]['cquery'].value;
 
+    console.log(cname);
+
+    if (cname==="")
+    {
+        alert("Please Enter Name.");
+    }
+
+    else if(cemail==="")
+    {
+        alert("Please Enter Email.");
+    }
+
+    else if(cphone==="")
+    {
+        alert("Please Enter Contact Number.");
+    }
+
+    else if(cquery==="")
+    {
+        alert("Please Enter Your Query.");
+    }
+}
+</script>
 </html>
