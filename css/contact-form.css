@@ -18,6 +18,8 @@ input:focus{
     width: 70%;
     height: 35vw;
     margin-bottom: 3%;
+    max-height: 35vw;
+    overflow-y: scroll;
 }
 
 h1{
@@ -49,6 +51,10 @@ textarea:focus{
 
 .submit_btn{
     background:#04444D;
+    height: 49px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 0;
     border: none;
 }
 
@@ -57,9 +63,15 @@ textarea:focus{
     background: #4a0602;
     color: white;
     border: none;
+    height: 49px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    border: none;
 }
 
 .form1{
     padding-top: 5%;
     background: #35383985;
+    
 }

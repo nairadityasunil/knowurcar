@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../js/navbar.js"></script>
+    <script src="../js/validation.js"></script>
+
 </head>
 
 <body>
@@ -53,49 +55,71 @@
             </button>
         </label>
     </nav>
-<center>
-    <div class="contact-form">
-        <div class="form1">
-            <h1>Let Us Solve Your Queries</h1>
-            <form action="" name="form2"  onsubmit="validate()">
-                <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
-                    <tr>
-                        <td style="width: 30%; text-align: end;">Enter Name : </td>
-                        <td>
-                            <input type="text"id="" style="width: 70%;" name="cname">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 30%;  text-align: end;">Enter Email : </td>
-                        <td>
-                            <input type="email"id=""  style="width: 70%;" name="cemail">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 30%;  text-align: end;">Enter Contact : </td>
-                        <td>
-                            <input type="tel"id=""  style="width: 70%;" name="cphone">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 30%;  text-align: end;">Your Query : </td>
-                        <td>
-                            <textarea id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" value="Submit" class="submit_btn">
-                            <input type="reset" value="Reset" class="reset_btn">
-                        </td>
-                    </tr>
-                </table>
-            </form>
+    <center>
+        <div class="contact-form">
+            <div class="form1">
+                <h1>Let Us Solve Your Queries</h1>
+                <form action="" name="form2" onsubmit="validate(event)">
+                    <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
+                        <tr>
+                            <td style="width: 30%; text-align: end;">Enter Name : </td>
+                            <td>
+                                <input type="text" id="" style="width: 70%;" name="cname" onkeydown="hide_nerror()">
+                                <div id="nerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Enter Email : </td>
+                            <td>
+                                <input type="email" id="" style="width: 70%;" name="cemail" onkeydown="hide_eerror()">
+                                <div id="eerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Enter Contact : </td>
+                            <td>
+                                <input type="tel" id="" style="width: 70%;" name="cphone" onkeydown="hide_perror()">
+                                <div id="perror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Your Query : </td>
+                            <td>
+                                <textarea id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"
+                                    onkeydown="hide_qerror()"></textarea>
+                                    <div id="qerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit" class="submit_btn">
+                                <!-- <button class="submit_btn">
+                                    Submit
+                                </button> -->
+                                <button class="reset_btn">
+                                    Reset
+                                </button>
+                                <!-- <input type="reset" value="Reset" class="reset_btn"> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="error">
+                                    <!-- <span>Hi</span> -->
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
 
+            </div>
         </div>
-    </div>
 
-</center>
+    </center>
 
     <!-- Footer section -->
     <div class="footer" id="contact">
@@ -121,35 +145,5 @@
         </div>
     </div>
 </body>
-<script>
-        function validate()
-{
-    let cname = document.forms["form2"]['cname'].value;
-    let cemail = document.forms["form2"]['cemail'].value;
-    let cphone = document.forms["form2"]['cphone'].value;
-    let cquery = document.forms["form2"]['cquery'].value;
 
-    console.log(cname);
-
-    if (cname==="")
-    {
-        alert("Please Enter Name.");
-    }
-
-    else if(cemail==="")
-    {
-        alert("Please Enter Email.");
-    }
-
-    else if(cphone==="")
-    {
-        alert("Please Enter Contact Number.");
-    }
-
-    else if(cquery==="")
-    {
-        alert("Please Enter Your Query.");
-    }
-}
-</script>
 </html>
