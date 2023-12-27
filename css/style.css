@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-/* Universal selector */
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    /* Text decorations like underline will be removed */
     list-style: none;
     box-sizing: border-box;
-    /* Bullets of lists will not be shown*/
 }
 
 html{
@@ -28,22 +23,16 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px; /* Adjust the radius to make it round */
     width: 8px; /* Adjust the width to make it smaller */
     height: 8px;
-    /* outline: 1px solid slategrey; */
 }
-
-/* styling for root element */
 html {
     scroll-behavior: smooth;
-    /* Shows scroll behaviour while navigating through the website. It will show a smooth effect while scrolling up and down or while clicking on a particular section like home, body, brand etc */
 }
 
-/* Styling of html body */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* background : #b6b3b3 !important; */
     background: black;
     overflow-x: hidden;
-    /* It will remove horizontal scrolling. */
+
 }
 
 /* Navbar Styling */
@@ -53,80 +42,63 @@ nav {
     /* background: #212121;  */
     background: black;
     position: fixed;
-    /* It will make the position of the navbar fixed. */
     top: 0;
     z-index: 1000;
-    /* It gives the position of the element among layers. */
     border-bottom: 1px solid #FFD700;
 }
 
-/* Know-ur-ride logo styling */
 .logo {
     margin: auto;
-    /* Defines all margins */
     font-size: 23px;
     font-weight: bold;
     color: white;
-    /* color: #7C0A02; */
     padding: 0 20px;
     line-height: 55px;
-    /* Height of the line */
 }
 
 nav ul {
     float: right;
-    /* Float right - the elements will be displayed on the right side */
     margin-right: 40px;
 }
 
-/* Styling of navbar list */
 nav li {
     display: inline-block;
     margin: 0 2px;
     line-height: 55px;
 }
 
-/* Styling of links in the navbar */
 nav a {
     color: white;
     font-size: 16px;
-    /* text-transform: unset; */
     border: 1px solid transparent;
     padding: 4px 7px;
     border-radius: 3px;
     font-weight: bold;
 }
 
-/* Styling of hamburger icon on the navbar when screen becomes small */
 nav #icon {
-    /* margin: auto; */
     line-height: 45px;
     float: right;
     top: 0;
     display: none;
     cursor: pointer;
-    /* Change the type of cursor when it is placed on a particular icon or element */
 }
 
-/* Styling of home section image */
 .home-card img {
     height: 120%;
     width: 100vw;
 
 }
 
-/* Styling of welcome heading */
 .welcome_heading {
     color: #04444D;
     padding-top: 10px;
     padding-left: 10px;
 }
 
-/* Styling of cards */
 .card {
     margin-top: 3vh;
     width: 100vw;
-    /* background-color: white; */
     margin-left: 5vw;
     margin-right: 5vw;
     border-radius: 50px;
@@ -134,7 +106,6 @@ nav #icon {
     padding-bottom: 2vw;
 }
 
-/* Styling of paragraph inside card */
 .card p {
     padding-top: 5px;
     padding-left: 20px;
@@ -148,57 +119,37 @@ nav #icon {
     padding-top: 60px;
 }
 
-/* Styling of id => home */
 #home {
     padding-top: 0.5%;
     height: 47vw;
-    /* Height being adjusted accorfding to the width of the screen */
 }
 
-/* Styling of home-card class */
 .home-card {
     margin-left: 0;
     margin-top: 30px;
-
     width: 100vw;
-    /* Set width */
     height: 45vw;
     top: 0;
     display: flex;
-    /* Make display flexbox */
-    /* Align text at center */
     overflow-x: hidden;
-    /* No horizontal scrolling */
     overflow-y: hidden;
-    /* No vertical scrolling */
     border-radius: 0;
     animation: home-background 30s ease-in-out infinite;
-    /* Image slideshow animation */
     background-repeat: no-repeat;
-    /* Backgorund image not to be repeated */
     background-attachment: scroll;
-    /* Background image should not scroll with the page */
     background-position: center;
-    /* Background image will be positioned at center */
     background-size: 100% 100%;
-    /* Size of background inage */
 }
 
-/* Styling pf welcome heading */
 .animated-text {
     position: absolute;
-    /* Give absolute postition to the heading */
-    /* color: white; */
     color: RED;
     margin-top: 5%;
     width: 50%;
     top: 25%;
     left: 5%;
-    /* border-radius: 15px; */
     justify-content: center;
-    /* Horiontal alignment */
     align-items: center;
-    /* Vertical alignment */
     animation: slidein 2s;
 }
 
@@ -222,17 +173,14 @@ nav #icon {
     padding-left: 1%;
     padding-right: 1%;
     color: white;
-    /* background: #7C0A02; */
 }
 
 .nav-search {
     margin-top: 5%;
-    /* border: 1px solid white; */
     background: #7C0A02;
     color: white;
 }
 
-/* Text formatting of the welcome heading*/
 .home-card h1 {
     font-size: 3vw;
     font-family: Helvetica, sans-serif;
@@ -245,20 +193,15 @@ nav #icon {
     overflow: hidden;
     width: 22% !important;
     height: 100px;
-    /* line-height: 50px; */
 }
 
 .card-parent {
-    /* background: white; */
     border-radius: 10px;
     overflow: hidden;
-    /* width: 18% !important; */
     border: 2px solid #7C0A02;
 }
 
-/* Details Section */
 #details {
-    /* position: absolute; */
     display: block;
     justify-content: center;
     align-items: center;
@@ -273,7 +216,6 @@ nav #icon {
 
 .dcard {
     padding: 2%;
-    /* height: 400px; */
 }
 
 .details-card h2 {
@@ -302,18 +244,13 @@ nav #icon {
     padding-top: 3%;
     color: #7C0A02;
     border-bottom: 2px solid white;
-    /* text-align: center; */
     font-size: 3vw;
     width: fit-content;
-    /* text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-style: double; */
 }
 
 .mission {
     background: #353839;
     padding: 10px;
-    /* width: 15vw; */
     height: 250px;
     text-align: center;
 }
@@ -321,7 +258,6 @@ nav #icon {
 .innovation {
     background: #353839;
     padding: 10px;
-    /* width: 15vw; */
     height: 250px;
     text-align: center;
 }
@@ -329,12 +265,10 @@ nav #icon {
 .sustainability {
     background: #353839;
     padding: 10px;
-    /* width: vw; */
     height: 250px;
     text-align: center;
 }
 
-/* Styles elated to brand section of homepage */
 #brands {
     align-items: center;
     justify-content: center;
@@ -344,7 +278,6 @@ nav #icon {
     margin-top: 2%;
 }
 
-/* Styling of brand heading */
 .brand_heading {
     padding-top: 3%;
     color: #7C0A02;
@@ -354,13 +287,11 @@ nav #icon {
     border-bottom: 2px solid white;
 }
 
-/* Styling of brand card */
 .brand-card {
     justify-content: center;
     align-items: center;
 }
 
-/* Brands divided into sections each section contains 5 brands */
 .bcard1 {
     padding-top: 2%;
     display: flex;
@@ -382,7 +313,6 @@ nav #icon {
     width: 16vw;
     height: auto;
     text-align: center;
-    /* border: 2px solid silver; */
 }
 
 .mercedes img {
@@ -405,7 +335,6 @@ nav #icon {
     width: 16vw;
     height: auto;
     text-align: center;
-    /* border: 2px solid silver; */
 }
 
 .bmw img {
@@ -428,7 +357,6 @@ nav #icon {
     width: 16vw;
     height: auto;
     text-align: center;
-    /* border: 2px solid silver; */
 }
 
 .audi img {
@@ -446,34 +374,20 @@ nav #icon {
     font-size: 17px;
 }
 
-/* .suzuki {
-    display: block;
-    width: 16vw;
-    height: auto;
-    text-align: center;
-    border: 2px solid silver;
-} */
-
-/* .suzuki img {
-    width: 70%;
-    height: auto;
-    padding: 5%;
+@keyframes slidein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
-
-.suzuki .brand-name {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    border-top: 2px solid #7C0A02;
-    font-weight: bold;
-    font-size: 15px;
-} */
 
 .toyota {
     display: block;
     width: 16vw;
     height: auto;
     text-align: center;
-    /* border: 2px solid silver; */
 }
 
 .toyota img {
@@ -490,7 +404,6 @@ nav #icon {
     font-size: 17px;
 }
 
-/* Styles related to types section of the homepage */
 #types {
     align-items: center;
     justify-content: center;
@@ -509,13 +422,11 @@ nav #icon {
     border-bottom: 2px solid white;
 }
 
-/* Styling of brand card */
 .type-card {
     justify-content: center;
     align-items: center;
 }
 
-/* Brands divided into sections eaxch section contains 5 brands */
 .tcard1 {
     padding-top: 2%;
     display: flex;
@@ -559,7 +470,6 @@ nav #icon {
     height: auto;
     text-align: center;
     border: 2px solid #7C0A02;
-
 }
 
 .convertible img {
